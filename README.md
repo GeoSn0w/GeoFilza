@@ -20,6 +20,6 @@ It can write to /var/ and /tmp and it can read from anywhere. Enjoy
 
 ### My Websites
 * <a href="https://idevicecentral.com">Latest iOS 16 Jailbreak News</a>
-* <a href="https://gametutorialpro.com">Latest Gaming News & Guides</a>
+* <a href="https://geosn0w.com">GeoSn0w's Blog</a>
 * <a href="https://jailbreak.fce365.info">iOS Jailbreak Forum</a>
 * <a href="https://gsmbypass.com">Latest FRP Bypass Tools & Guides</a>
